@@ -1,4 +1,4 @@
-let genshinImpactImages = ["Images/1.jpg","Images/2.jpg","Images/3.jpg","Images/4.jpg","Images/5.jpg","Images/6.jpg","Images/7.jpg","Images/8.jpg","Images/9.jpg","Images/10.jpg","Images/11.jpg","Images/12.jpg","Images/1.jpg"]
+let genshinImpactImages = ["Images/1.jpg","Images/2.jpg","Images/3.jpg","Images/4.jpg","Images/5.jpeg","Images/6.jpg","Images/7.jpg","Images/8.jpg","Images/9.jpg","Images/10.jpg","Images/11.jpg","Images/12.jpg","Images/1.jpg"]
 
 const genshinImpactQuotes = ["You should know that all power comes at a price. For every bit of power you gain, so too do you gain more responsibility. - Zhongli",
 "Reality is the stillness buried deep beneath the illusion - Raiden Shogun", 
@@ -26,19 +26,52 @@ const imgs = document.getElementsByTagName('img');
 for (let i = 0; i < imgs.length; i++) {
     let randomImgs = Math.floor(Math.random() * genshinImpactImages.length);
     imgs[i].src = genshinImpactImages[randomImgs];
+    imgs[i].src = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg";
 } 
 const body = document.getElementsByTagName('body');
-body.background = genshinImpactImages[3];
+body["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg";
 
 //And all of the text as well
-const text = document.getElementsByTagName('h1');
-for (let i = 0; i < imgs.length; i++) {
+const text = document.getElementsByTagName("h1");
+for (let i = 0; i < text.length; i++) {
     let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
-    h1[i].innerText = genshinImpactQuotesrandomImgs;
+    text[i].innerText = genshinImpactQuotes[randomQuotes];
+    text["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
+} 
+const words = document.getElementsByTagName("p");
+for (let i = 0; i < text.length; i++) {
+    let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
+    words[i].innerText = genshinImpactQuotes[randomQuotes];
+    words["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
+} 
+const moreWords = document.getElementsByTagName("h2");
+for (let i = 0; i < text.length; i++) {
+    let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
+    moreWords[i].innerText = genshinImpactQuotes[randomQuotes];
+    moreWords["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
+} 
+const yupWords = document.getElementsByTagName("h3");
+for (let i = 0; i < text.length; i++) {
+    let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
+    yupWords[i].innerText = genshinImpactQuotes[randomQuotes];
+    yupWords["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
 } 
 
+const listsWords = document.getElementsByTagName("li");
+for (let i = 0; i < text.length; i++) {
+    let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
+    listsWords[i].innerText = genshinImpactQuotes[randomQuotes];
+    listsWords["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
+} 
+
+const aDistinct = document.getElementsByTagName("a");
+for (let i = 0; i < text.length; i++) {
+    let randomQuotes = Math.floor(Math.random() * genshinImpactQuotes.length);
+    aDistinct[i].innerText = genshinImpactQuotes[randomQuotes];
+    aDistinct["background-image"] = "https://sensortower-itunes.s3.amazonaws.com/blog/2021/09/genshin-impact-version-2-1-150-million-revenue-first-week.jpg"
+} 
 // play.audio();
 // new Audio('Sounds/GenshinImpact.mp3');
 
-let myAudio = new Audio(chrome.runtime.getURL('Sounds/GenshinImpact.mp3'));
+let myAudio = new Audio(chrome.runtime.getURL('https://www.youtube.com/watch?v=1xMRU4D9ODc&t=1964s'));
 myAudio.play();
