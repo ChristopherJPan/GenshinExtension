@@ -3,6 +3,7 @@
   "description": "GenshinIsLoveGenshinIsLife",
   "version": "2.0",
   "manifest_version": 2,
+  "web_accessible_resources": ["Images/*"],
   "content_scripts":[
     {
       "matches": ["<all_urls>"],
@@ -12,5 +13,8 @@
   "browser_action":{
     "default_popup": "Testing.html",
     "default_title": "Genshin Test"
+  },
+  "icons":{
+    "1":"/Images/1.jpg"
   }
 }
